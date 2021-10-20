@@ -1,22 +1,28 @@
 {
   "name": "e2etest",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is E2E test cases for Big-Teams Projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run --headless --browser chrome",
+    "ci:cy-run": "start-server-and-test ci:start-server http://localhost:4200 cy:run"
+
   },
   "repository": {
     "type": "git",
-    "url": "\\"
+    "url": "https://github.com/ShahbazHunzai2018/Cache-Cloud-Automated-E2ETestss.git"
   },
-  "author": "",
+  "author": "Shahbaz Ali Khan",
   "license": "ISC",
   "devDependencies": {
     "@cypress/react": "^5.9.1",
     "@cypress/webpack-dev-server": "^1.4.0",
     "cypress": "^7.6.0",
-    "html-webpack-plugin": "^4.5.2"
+    "faker": "^5.5.3",
+    "html-webpack-plugin": "^4.5.2",
+    "http-server": "^13.0.2",
+    "start-server-and-test": "^1.14.0"
   }
 }
